@@ -7,7 +7,7 @@ if(NOT CMAKE_CXX_STANDARD)
 endif()
 
 find_package(ament_cmake REQUIRED)
-find_package(Boost REQUIRED date_time system thread)
+find_package(Boost REQUIRED date_time random thread)
 
 include_directories(include)
 
@@ -20,14 +20,23 @@ ament_export_libraries(${PROJECT_NAME})
 ament_export_dependencies(Boost)
 ament_export_include_directories(include)
 
+set_target_properties(${PROJECT_NAME} PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
+
 install(
-	TARGETS ${PROJECT_NAME}
-	ARCHIVE DESTINATION lib
-	LIBRARY DESTINATION lib
-	RUNTIME DESTINATION bin
+  TARGETS ${PROJECT_NAME}
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
 )
 
-install(DIRECTORY include/
-        DESTINATION include)
+install(
+  DIRECTORY include/
+  DESTINATION include
+)
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
 ament_package()
