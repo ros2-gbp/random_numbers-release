@@ -1,0 +1,13 @@
+Source: ros-humble-random-numbers
+Section: misc
+Priority: optional
+Maintainer: Anas M'chichou <anasarrak@erlerobotics.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-date-time-dev, libboost-dev, libboost-random-dev, libboost-thread-dev, ros-humble-ament-cmake, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-cmake <!nocheck>, ros-humble-ros-workspace
+Homepage: http://ros.org/wiki/random_numbers
+Standards-Version: 3.9.2
+
+Package: ros-humble-random-numbers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-date-time1.74.0, libboost-dev, libboost-random-dev, libboost-random1.74.0, libboost-thread-dev, libboost-thread1.74.0, ros-humble-ros-workspace
+Description: This library contains wrappers for generating floating point values, integers, quaternions using boost libraries.
+ The constructor of the wrapper is guaranteed to be thread safe and initialize its random number generator to a random seed. Seeds are obtained using a separate and different random number generator.
