@@ -1,3 +1,26 @@
+## random_numbers (rolling) - 2.0.2-1
+
+The packages in the `random_numbers` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --ros-distro rolling random_numbers -e` on `Wed, 28 May 2025 06:01:54 -0000`
+
+The `random_numbers` package was released.
+
+Version of package(s) in repository `random_numbers`:
+
+- upstream repository: https://github.com/moveit/random_numbers.git
+- release repository: https://github.com/ros2-gbp/random_numbers-release.git
+- rosdistro version: `2.0.1-4`
+- old version: `2.0.1-4`
+- new version: `2.0.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## random_numbers (rolling) - 2.0.1-4
 
 The packages in the `random_numbers` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --track rolling --rosdistro rolling random_numbers` on `Thu, 07 Mar 2024 12:45:58 -0000`
