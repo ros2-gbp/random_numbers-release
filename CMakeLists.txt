@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 project(random_numbers)
 
 find_package(ament_cmake REQUIRED)
-find_package(Boost REQUIRED date_time random thread)
+find_package(Boost CONFIG REQUIRED date_time random thread)
 
 add_library(${PROJECT_NAME} SHARED
   src/random_numbers.cpp
@@ -12,6 +12,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
     $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
 )
 target_link_libraries(${PROJECT_NAME} PUBLIC Boost::random)
+target_link_libraries(${PROJECT_NAME} PRIVATE Boost::thread)
 ament_export_targets(export_${PROJECT_NAME} HAS_LIBRARY_TARGET)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
