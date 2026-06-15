@@ -1,3 +1,26 @@
+## random_numbers (jazzy) - 2.0.5-1
+
+The packages in the `random_numbers` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --rosdistro jazzy -e random_numbers` on `Mon, 15 Jun 2026 10:53:54 -0000`
+
+The `random_numbers` package was released.
+
+Version of package(s) in repository `random_numbers`:
+
+- upstream repository: https://github.com/ros-planning/random_numbers.git
+- release repository: https://github.com/ros2-gbp/random_numbers-release.git
+- rosdistro version: `2.0.1-5`
+- old version: `2.0.1-5`
+- new version: `2.0.5-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## random_numbers (kilted) - 2.0.5-1
 
 The packages in the `random_numbers` repository were released into the `kilted` distro by running `/usr/bin/bloom-release --rosdistro kilted random_numbers` on `Mon, 15 Jun 2026 10:49:49 -0000`
