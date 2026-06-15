@@ -2,6 +2,28 @@
 Changelog for package random_numbers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.5 (2026-06-15)
+------------------
+* Switch to find_package(Boost CONFIG)
+* Fix link to Boost::thread imported target (`#52 <https://github.com/moveit/random_numbers/issues/52>`_)
+* Contributors: Robert Haschke, Silvio Traversaro
+
+2.0.4 (2025-06-06)
+------------------
+* Fix propagation of Boost::random dependency
+* Contributors: Robert Haschke
+
+2.0.3 (2025-06-01)
+------------------
+* Fix declaration of include directories
+* Contributors: Robert Haschke
+
+2.0.2 (2025-05-28)
+------------------
+* Modernize cmake (`#50 <https://github.com/ros-planning/random_numbers/issues/50>`_)
+* Replace deprecated ament_target_libraries with target_link_libraries (`#47 <https://github.com/ros-planning/random_numbers/issues/47>`_)
+* Contributors: David V. Lu, mosfet80
+
 2.0.1 (2021-05-24)
 ------------------
 * Support rolling on CI (`#32 <https://github.com/ros-planning/random_numbers/issues/32>`_)
